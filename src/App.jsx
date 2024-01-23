@@ -1,13 +1,28 @@
 import './App.css'
 import { Home } from './components/Home'
+import { NavPanel } from './components/NavPanel'
 
-function App() {
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  createRoutesFromElements,
+} from 'react-router-dom';
+import Root from './components/Root';
+import { About } from './components/About';
 
-  return (
-    <section>
-      <Home />
-    </section>
-  )
-}
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<Root />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Route>,
+  ),
+);
 
-export default App
+const App = () => <RouterProvider router={router} />;
+
+export default App;
+
