@@ -9,7 +9,7 @@ export const NavPanel = () => {
 
   const setNavPanelBackground = (targetLocation) => {
     if (location.pathname === targetLocation)
-      return { borderBottom: "1px solid blue", color: "blue" };
+      return { borderBottom: "1px solid greenyellow", color: "greenyellow" };
     return {};
   };
 
@@ -54,9 +54,14 @@ export const NavPanel = () => {
                 About
               </Link>
             </li>
-            <li style={setNavPanelBackground("/slide")}>
-              <Link to="/slide">
-                Slideshow
+            <li style={setNavPanelBackground("/projects")}>
+              <Link to="/projects">
+                Projects
+              </Link>
+            </li>
+            <li style={setNavPanelBackground("/vision-mission")}>
+              <Link to="/vision-mission">
+                Phylosophies
               </Link>
             </li>
           </ul>

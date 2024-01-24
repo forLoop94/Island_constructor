@@ -11,6 +11,8 @@ import {
 import Root from './components/Root';
 import { About } from './components/About';
 import Slideshow from './components/Slideshow';
+import { Projects } from './components/Projects';
+import { VisionMission } from './components/VisionMission';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +21,8 @@ const router = createBrowserRouter(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/slide" element={<Slideshow />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/vision-mission" element={<VisionMission />} />
       </Route>
     </Route>,
   ),

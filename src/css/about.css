@@ -1,5 +1,7 @@
 :root {
   --apple-green: greenyellow;
+  --forestgreen: rgb(76, 127, 1);
+  --dark-text: rgba(0, 0, 0, 0.7);
 }
 
 .about {
@@ -33,7 +35,7 @@
   justify-content: center;
 }
 
-.btn-main {
+.btn-main, .btn-dark-bg {
   border: 2px solid var(--apple-green);
   color: var(--apple-green);
   padding: 0.8rem 1.3rem;
@@ -41,20 +43,63 @@
   background-color: transparent;
 }
 
+.btn-dark-bg {
+  border: 2px solid white;
+  color: white;
+  background-color: var(--forestgreen);
+}
+
+.btn-dark-bg:hover {
+  color: var(--dark-text);
+  background-color: white;
+}
+
 .btn-main:hover {
   color: white;
   background-color: var(--apple-green);
 }
 
+.image-container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.about-ceo {
+  height: 80vh;
+  box-shadow: 0 5px 10px 0 rgb(200, 200, 200);
+}
+
+.objectives-header {
+  color: white;
+}
+
+.objectives-text {
+  padding: 1.5rem;
+  background-color: var(--forestgreen);
+  color: white;
+}
+
 @media (min-width: 1000px) {
   .about {
-    padding: 3rem;
+    padding: 1rem 3rem 3rem 3rem;
     flex-direction: row;
   }
 
-  .about-text {
+  .about-text, .objectives-text {
     width: 50%;
     align-self: center;
+  }
+
+  .objectives-text {
+    align-self: start;
+    background-color: var(--forestgreen);
+    color: white;
+    height: 70vh;
+    box-shadow: 0 5px 10px 0 rgb(200, 200, 200);
+  }
+
+  .vision-mission-text {
+    width: 50%;
   }
 
   .about-header, .about-paragraph {
@@ -80,4 +125,9 @@
     width: 80%;
     height: 110vh;
   }
+
+  .vision-mission {
+    padding: 7rem;
+  }
+
 }

@@ -1,5 +1,5 @@
 :root {
-  --lavendar: rgba(255, 240, 245, 0.6);
+  --apple-green: greenyellow;
   --lavendar-light: rgba(255, 240, 245, 0.8);
 }
 
@@ -49,8 +49,8 @@
 
 .nav-panel li {
   list-style-type: none;
-  width: 3rem;
-  margin: 1rem 0;
+  width: auto;
+  margin: 1rem;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   transition: 0.3s linear;
@@ -65,19 +65,18 @@
   text-align: left;
   font-size: 0.7rem;
   padding-bottom: 3px;
-  color: white;
+  color: var(--applegreen);
   outline: none;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .nav-panel li:active a {
   color: white;
 }
-
-/* .nav-panel li:hover a {
-  color: white;
-} */
 
 .mobile-close {
   position: absolute;
@@ -104,7 +103,6 @@
     /* box-shadow: 0 0 10px 0 rgb(200, 200, 200); */
     background-color: transparent;
     z-index: 1001;
-    /* justify-content: space-between; */
   }
 
   .mobile-nav {
@@ -112,23 +110,26 @@
   }
 
   .nav-panel ul {
-    width: 50%;
+    width: auto;
     display: flex;
     justify-content: space-between;
-    margin-left: 50%;
   }
 
   .nav-panel a {
     font-size: 0.8rem;
+    color: greenyellow;
   }
 
   .nav-panel a:hover {
-    color: red;
+    color: green;
+  }
+
+  .logo-container {
+    width: 20%;
   }
 
   .logo {
     color: white;
-    /* margin: 0 2rem 1rem 2rem; */
     width: 120px;
     height: 120px;
   }
