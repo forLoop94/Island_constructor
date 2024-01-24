@@ -9,7 +9,7 @@ export const NavPanel = () => {
 
   const setNavPanelBackground = (targetLocation) => {
     if (location.pathname === targetLocation)
-      return { borderBottom: "1px solid white", color: "white" };
+      return { borderBottom: "1px solid blue", color: "blue" };
     return {};
   };
 
@@ -38,9 +38,10 @@ export const NavPanel = () => {
         onKeyDown={() => setPanel(!panel)}
         tabIndex={0}
       >
-        {/* <div className="logo-container">
-          <img src={logo} alt="logo" className="logo" />
-        </div> */}
+        <div className="logo-container">
+          {/* <img src={logo} alt="logo" className="logo" /> */}
+          <h1 className="text-white">Logo</h1>
+        </div>
         <div className="nav-panel">
           <ul>
             <li style={setNavPanelBackground("/")}>
@@ -53,9 +54,9 @@ export const NavPanel = () => {
                 About
               </Link>
             </li>
-            <li style={setNavPanelBackground("/")}>
-              <Link to="/">
-                Home
+            <li style={setNavPanelBackground("/slide")}>
+              <Link to="/slide">
+                Slideshow
               </Link>
             </li>
           </ul>

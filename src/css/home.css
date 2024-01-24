@@ -1,0 +1,7 @@
+.headline {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('../assets/construction1.jpeg');
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&w=600'); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

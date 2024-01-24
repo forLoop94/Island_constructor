@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import Root from './components/Root';
 import { About } from './components/About';
+import Slideshow from './components/Slideshow';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Root />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/slide" element={<Slideshow />} />
       </Route>
     </Route>,
   ),
