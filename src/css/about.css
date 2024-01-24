@@ -1,0 +1,83 @@
+:root {
+  --apple-green: greenyellow;
+}
+
+.about {
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-header {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 7px;
+  color: var(--apple-green);
+}
+
+.about-paragraph {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.about-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main {
+  border: 2px solid var(--apple-green);
+  color: var(--apple-green);
+  padding: 0.8rem 1.3rem;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.btn-main:hover {
+  color: white;
+  background-color: var(--apple-green);
+}
+
+@media (min-width: 1000px) {
+  .about {
+    padding: 3rem;
+    flex-direction: row;
+  }
+
+  .about-text {
+    width: 50%;
+    align-self: center;
+  }
+
+  .about-header, .about-paragraph {
+    text-align: right;
+    font-size: 40px;
+  }
+
+  .about-paragraph {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    word-spacing: 2px;
+  }
+
+  .about-btn-container {
+    justify-content: end;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+
+  .about-ceo {
+    width: 80%;
+    height: 110vh;
+  }
+}

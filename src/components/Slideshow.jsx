@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Slideshow.css';
+import '../css/Slideshow.css';
 import image1 from "../assets/auth-pages-bg.jpg";
 
 const Slideshow = () => {
