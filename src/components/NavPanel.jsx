@@ -64,6 +64,11 @@ export const NavPanel = () => {
                 Phylosophies
               </Link>
             </li>
+            <li style={setNavPanelBackground("/footer")}>
+              <Link to="/footer">
+                Footer
+              </Link>
+            </li>
           </ul>
         </div>
         <div
