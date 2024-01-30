@@ -1,4 +1,6 @@
 import "../css/home.css";
+import { Footer } from "./Footer";
+import { About } from "./About";
 import Slideshow from "./Slideshow";
 
 export const Home = () => {
@@ -7,6 +9,10 @@ export const Home = () => {
     //   <h1>Island Construction Co</h1>
     //   <h5>Making dreams come true</h5>
     // </div>
-    <Slideshow />
+    <section>
+      <Slideshow />
+      <About />
+      <Footer/>
+    </section>
   );
 };

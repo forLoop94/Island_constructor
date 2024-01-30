@@ -14,6 +14,7 @@ import Slideshow from './components/Slideshow';
 import { Projects } from './components/Projects';
 import { VisionMission } from './components/VisionMission';
 import { Footer } from './components/Footer';
+import { ContactPopup } from './components/ContactPopup';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path="/about" element={<About />} />
         <Route path="/slide" element={<Slideshow />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/popup" element={<ContactPopup />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/vision-mission" element={<VisionMission />} />
       </Route>

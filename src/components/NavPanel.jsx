@@ -69,6 +69,11 @@ export const NavPanel = () => {
                 Footer
               </Link>
             </li>
+            <li style={setNavPanelBackground("/popup")}>
+              <Link to="/popup">
+                Contact Popup
+              </Link>
+            </li>
           </ul>
         </div>
         <div
