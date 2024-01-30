@@ -1,5 +1,6 @@
 import { BsSend } from "react-icons/bs";
 import "../css/contact-popup.css";
+import { toast } from "react-toastify";
 
 export const ContactPopup = () => {
   return (
@@ -19,12 +20,14 @@ export const ContactPopup = () => {
             className="form-control"
             name="fullName"
             placeholder="* Name"
+            required
           />
           <input
             type="email"
             className="form-control"
             name="email"
             placeholder="* Email"
+            required
           />
           <textarea
             name="message"
@@ -32,6 +35,7 @@ export const ContactPopup = () => {
             placeholder="* Message"
             col="5"
             rows="5"
+            required
           ></textarea>
           <div className="about-btn-container d-flex justify-content-center mt-1">
           <button type="submit" className="btn-dark-bg">
