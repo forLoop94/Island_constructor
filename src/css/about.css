@@ -52,6 +52,7 @@
 .btn-dark-bg:hover {
   color: var(--dark-text);
   background-color: white;
+  border: 2px solid var(--forestgreen);
 }
 
 .btn-main:hover {

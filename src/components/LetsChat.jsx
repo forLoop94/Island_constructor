@@ -1,10 +1,10 @@
-import { BsChatFill } from "react-icons/bs";
+import { BsWechat } from "react-icons/bs";
 
 export const LetsChat = () => {
   return (
     <div>
       <button className="chat-btn">
-        <BsChatFill className="chat-icon" />
+        <BsWechat className="chat-icon" />
       </button>
     </div>
   );

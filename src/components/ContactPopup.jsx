@@ -1,3 +1,4 @@
+import { BsSend } from "react-icons/bs";
 import "../css/contact-popup.css";
 
 export const ContactPopup = () => {
@@ -11,7 +12,7 @@ export const ContactPopup = () => {
         <form
           action="https://formspree.io/f/xknaqwwd"
           method="post"
-          className="popup-contact-form d-flex flex-column gap-4"
+          className="popup-contact-form d-flex flex-column gap-3"
         >
           <input
             type="text"
@@ -32,9 +33,11 @@ export const ContactPopup = () => {
             col="5"
             rows="5"
           ></textarea>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
+          <div className="about-btn-container d-flex justify-content-center mt-1">
+          <button type="submit" className="btn-dark-bg">
+            Submit <BsSend className="ms-3" />
+          </button>
+        </div>
         </form>
       </div>
     </div>

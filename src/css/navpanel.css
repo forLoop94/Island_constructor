@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: lato, sans-serif;
+  font-family: montserrat, sans-serif;
 }
 
 .menu-btn {
@@ -28,13 +28,14 @@
 .root-contact-form {
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 .chat-btn-container {
   position: fixed;
   top: 85vh;
   left: 2rem;
-  z-index: 100;
+  z-index: 101;
 }
 
 .chat-btn {
@@ -56,6 +57,8 @@
   top: 0;
   left: 0;
   height: 3rem;
+  width: 100%;
+  background-color: var(--forestgreen);
   z-index: 1000;
 }
 
