@@ -1,6 +1,7 @@
 :root {
   --apple-green: greenyellow;
   --lavendar-light: rgba(255, 240, 245, 0.8);
+  --forestgreen: rgb(76, 127, 1);
 }
 
 * {
@@ -22,6 +23,31 @@
   background-color: rgba(255, 255, 255, 0.2);
   position: fixed;
   top: 0;
+}
+
+.root-contact-form {
+  position: fixed;
+  top: 0;
+}
+
+.chat-btn-container {
+  position: fixed;
+  top: 85vh;
+  left: 2rem;
+  z-index: 100;
+}
+
+.chat-btn {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--forestgreen);
+  border: none;
+}
+
+.chat-icon {
+  color: white;
+  font-size: 24px;
 }
 
 .mobile-nav {
@@ -103,6 +129,12 @@
     /* box-shadow: 0 0 10px 0 rgb(200, 200, 200); */
     background-color: transparent;
     z-index: 1001;
+  }
+
+  .root-contact-form {
+    /* top: 1rem; */
+    left: 1rem;
+    width: 25rem;
   }
 
   .mobile-nav {
