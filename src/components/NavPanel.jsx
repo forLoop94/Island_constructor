@@ -60,6 +60,11 @@ export const NavPanel = () => {
               </Link>
             </li>
             <li>
+              <Link style={setNavPanelBackground("/news")} to="/news">
+                News
+              </Link>
+            </li>
+            <li>
               <Link style={setNavPanelBackground("/vision-mission")} to="/vision-mission">
                 Phylosophies
               </Link>

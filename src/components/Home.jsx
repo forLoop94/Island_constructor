@@ -3,6 +3,7 @@ import { Footer } from "./Footer";
 import { About } from "./About";
 import { VisionMission } from "./VisionMission";
 import Slideshow from "./Slideshow";
+import { NewsBg } from "./News-bg";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <div className="about-container">
         <About className="home-about" />
       </div>
+      <NewsBg />
       <Footer />
     </section>
   );

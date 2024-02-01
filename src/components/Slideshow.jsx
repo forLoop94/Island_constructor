@@ -50,7 +50,7 @@ const Slideshow = () => {
         <div className="slide">
           <img src={image1} alt="Image 1" />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
-            <div className="label">Seyi-Daniels & Co</div>
+            <div className="label">Seyi_Daniels & Co</div>
             <p className="label">Changing lives</p>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Slideshow = () => {
             alt="Image 2"
           />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
-            <div className="label">Seyi-Daniels & Co</div>
+            <div className="label">Seyi_Daniels & Co</div>
             <p className="label">Changing lives</p>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Slideshow = () => {
             alt="Image 3"
           />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
-            <div className="label">Seyi-Daniels & Co</div>
+            <div className="label">Seyi_Daniels & Co</div>
             <p className="label">Changing lives</p>
           </div>
         </div>

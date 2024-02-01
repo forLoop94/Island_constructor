@@ -23,6 +23,7 @@ body {
   height: 100vh;
   object-fit: cover;
   animation: slider 10s ease-in-out;
+  animation-timing-function: linear;
 }
 
 .label-container {
@@ -41,6 +42,7 @@ body {
   color: white;
   filter: blur(15px);
   animation: slider-label 10s ease-in-out;
+  animation-timing-function: linear;
 }
 
 /* .prev, .next {
