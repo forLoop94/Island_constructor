@@ -74,6 +74,7 @@ footer {
   .footer-photo {
     width: 50%;
     height: 17rem;
+    object-fit: cover;
   }
 
   .footer-note {

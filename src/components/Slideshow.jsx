@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../css/Slideshow.css';
+import React, { useState, useEffect, useRef } from "react";
+import "../css/Slideshow.css";
 import image1 from "../assets/auth-pages-bg.jpg";
 
 const Slideshow = () => {
@@ -10,14 +10,14 @@ const Slideshow = () => {
     showSlides(slideIndex);
     const intervalId = setInterval(() => {
       plusSlides(1);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, [slideIndex]);
 
   const showSlides = (n) => {
     const slides = slidesRef.current.children;
-    const dots = document.getElementsByClassName('dot');
+    const dots = document.getElementsByClassName("dot");
     let newIndex = n;
 
     if (n > 3) {
@@ -27,12 +27,12 @@ const Slideshow = () => {
     }
 
     for (let i = 0; i < 3; i++) {
-      slides[i].style.display = 'none';
-      dots[i].classList.remove('active-dot');
+      slides[i].style.display = "none";
+      dots[i].classList.remove("active-dot");
     }
 
-    slides[newIndex - 1].style.display = 'block';
-    dots[newIndex - 1].classList.add('active-dot');
+    slides[newIndex - 1].style.display = "block";
+    dots[newIndex - 1].classList.add("active-dot");
     setSlideIndex(newIndex);
   };
 
@@ -48,20 +48,32 @@ const Slideshow = () => {
     <div className="slideshow-container">
       <div className="slides" ref={slidesRef}>
         <div className="slide">
-           <img src={image1} alt="Image 1" />
-           <div className='backdrop'></div>
-           <h1 className="label">Label 1</h1>
-         </div>
-         <div className="slide">
-           <img src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2" />
-           <h1 className="label">Label 2</h1>
-           <div className='backdrop'></div>
-         </div>
-         <div className="slide">
-           <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3" />
-           <div className='backdrop'></div>
-           <h1 className="label">Label 3</h1>
-         </div>
+          <img src={image1} alt="Image 1" />
+          <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
+            <div className="label">Seyi-Daniels & Co</div>
+            <p className="label">Changing lives</p>
+          </div>
+        </div>
+        <div className="slide">
+          <img
+            src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Image 2"
+          />
+          <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
+            <div className="label">Seyi-Daniels & Co</div>
+            <p className="label">Changing lives</p>
+          </div>
+        </div>
+        <div className="slide">
+          <img
+            src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Image 3"
+          />
+          <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
+            <div className="label">Seyi-Daniels & Co</div>
+            <p className="label">Changing lives</p>
+          </div>
+        </div>
       </div>
       <a className="prev" onClick={() => plusSlides(-1)}>
         &#10094;
@@ -73,7 +85,7 @@ const Slideshow = () => {
         {Array.from({ length: 3 }).map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === slideIndex - 1 ? 'active-dot' : ''}`}
+            className={`dot ${index === slideIndex - 1 ? "active-dot" : ""}`}
             onClick={() => handleDotClick(index)}
           ></span>
         ))}
@@ -83,5 +95,3 @@ const Slideshow = () => {
 };
 
 export default Slideshow;
-
-
