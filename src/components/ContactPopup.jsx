@@ -38,7 +38,7 @@ export const ContactPopup = () => {
             required
           ></textarea>
           <div className="about-btn-container d-flex justify-content-center mt-1">
-          <button type="submit" className="btn-dark-bg">
+          <button type="submit" className="btn-dark-bg" onClick={() => toast.success("Submission done successfully")}>
             Submit <BsSend className="ms-3" />
           </button>
         </div>

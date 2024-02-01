@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaX } from "react-icons/fa6";
 import "../css/navpanel.css";
 
 export const NavPanel = () => {
@@ -9,7 +9,7 @@ export const NavPanel = () => {
 
   const setNavPanelBackground = (targetLocation) => {
     if (location.pathname === targetLocation)
-      return { borderBottom: "1px solid greenyellow", color: "greenyellow" };
+      return { borderBottom: "1px solid greenyellow", color: "rgb(76, 127, 1)" };
     return {};
   };
 
@@ -44,33 +44,33 @@ export const NavPanel = () => {
         </div>
         <div className="nav-panel">
           <ul>
-            <li style={setNavPanelBackground("/")}>
-              <Link to="/">
+            <li>
+              <Link style={setNavPanelBackground("/")} to="/">
                 Home
               </Link>
             </li>
-            <li style={setNavPanelBackground("/about")}>
-              <Link to="/about">
+            <li>
+              <Link style={setNavPanelBackground("/about")} to="/about">
                 About
               </Link>
             </li>
-            <li style={setNavPanelBackground("/projects")}>
-              <Link to="/projects">
+            <li>
+              <Link style={setNavPanelBackground("/projects")} to="/projects">
                 Projects
               </Link>
             </li>
-            <li style={setNavPanelBackground("/vision-mission")}>
-              <Link to="/vision-mission">
+            <li>
+              <Link style={setNavPanelBackground("/vision-mission")} to="/vision-mission">
                 Phylosophies
               </Link>
             </li>
-            <li style={setNavPanelBackground("/footer")}>
-              <Link to="/footer">
+            <li>
+              <Link style={setNavPanelBackground("/footer")} to="/footer">
                 Footer
               </Link>
             </li>
-            <li style={setNavPanelBackground("/popup")}>
-              <Link to="/popup">
+            <li>
+              <Link style={setNavPanelBackground("/popup")} to="/popup">
                 Contact Popup
               </Link>
             </li>
@@ -84,6 +84,7 @@ export const NavPanel = () => {
           tabIndex={0}
           aria-label="close button"
         >
+          <FaX className="menu-btn" />
         </div>
       </div>
     </>
