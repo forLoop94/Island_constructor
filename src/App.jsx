@@ -16,6 +16,7 @@ import { VisionMission } from './components/VisionMission';
 import { Footer } from './components/Footer';
 import { ContactPopup } from './components/ContactPopup';
 import { News } from './components/News';
+import { NewsDetails } from './components/NewsDetails';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
         <Route path="/popup" element={<ContactPopup />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:newsId" element={<NewsDetails />} />
         <Route path="/vision-mission" element={<VisionMission />} />
       </Route>
     </Route>,
