@@ -91,54 +91,27 @@ body {
   0% {
     filter: grayscale(100%);
     filter: brightness(70%);
-  }
-  12.5% {
-    filter: brightness(55%);
-  }
-  25% {
-    filter: brightness(80%);
-  }
-  37.5% {
-    filter: brightness(85%);
+    transform: scale(1.0);
   }
   50% {
     filter: grayscale(50%);
-    filter: brightness(90%);
-  }
-  62.5% {
-    filter: grayscale(50%);
-    filter: brightness(85%);
-  }
-  75% {
-    filter: brightness(80%);
-  }
-  87.5% {
-    filter: brightness(75%);
+    transform: scale(1.03);
   }
   100% {
     filter: grayscale(0%);
-    filter: brightness(70%);
+    filter: brightness(100%);
+    transform: scale(1.07);
   }
 }
 
 @keyframes slider-label {
   0% {
     filter: blur(15px);
-  }
-  25% {
-    filter: blur(10px);
-  }
-  50% {
-    filter: blur(6px);
-  }
-  75% {
-    filter: blur(4px);
-  }
-  87.5% {
-    filter: blur(1px);
+    transform: matrix(0%);
   }
   100% {
     filter: blur(0px);
+    transform: matrix(70%);
   }
 }
 
