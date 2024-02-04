@@ -1,5 +1,4 @@
 import "../css/news.css";
-import { Footer } from "./Footer";
 
 export const NewsBg = () => {
   return (

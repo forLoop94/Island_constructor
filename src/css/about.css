@@ -35,7 +35,8 @@
   justify-content: center;
 }
 
-.btn-main, .btn-dark-bg {
+.btn-main,
+.btn-dark-bg {
   border: 2px solid var(--apple-green);
   color: var(--apple-green);
   padding: 0.8rem 1.3rem;
@@ -91,7 +92,8 @@
     height: 100%;
   }
 
-  .about-text, .objectives-text {
+  .about-text,
+  .objectives-text {
     width: 50%;
     align-self: center;
   }
@@ -108,7 +110,8 @@
     width: 50%;
   }
 
-  .about-header, .about-paragraph {
+  .about-header,
+  .about-paragraph {
     text-align: right;
     font-size: 40px;
   }

@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/footer.css";
 import "../css/about.css";
 import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";

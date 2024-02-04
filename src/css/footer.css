@@ -6,6 +6,7 @@
 
 footer {
   position: relative;
+
   /* padding-top: 4rem; */
   height: 100vh;
 }
@@ -29,7 +30,8 @@ footer {
   font-family: montserrat, sans-serif;
 }
 
-.footer-bottom p, .main-footer p {
+.footer-bottom p,
+.main-footer p {
   font-family: 'Source Sans 3', sans-serif;
 }
 
@@ -41,7 +43,8 @@ footer {
   border-top: 1px solid var(--apple-green);
 }
 
-.footer-image-container, .footer-photo {
+.footer-image-container,
+.footer-photo {
   display: none;
 }
 
@@ -51,7 +54,8 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  .footer-content-wrapper, .footer-image-container {
+  .footer-content-wrapper,
+  .footer-image-container {
     display: flex;
     justify-content: space-between;
   }
@@ -67,7 +71,8 @@ footer {
     width: 70%;
   }
 
-  .footer-image-container, .footer-photo {
+  .footer-image-container,
+  .footer-photo {
     display: flex;
   }
 

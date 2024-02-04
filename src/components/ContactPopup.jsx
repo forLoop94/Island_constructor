@@ -33,7 +33,6 @@ export const ContactPopup = () => {
             name="message"
             className="form-control"
             placeholder="* Message"
-            col="5"
             rows="5"
             required
           ></textarea>

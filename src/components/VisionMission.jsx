@@ -1,4 +1,3 @@
-import React from "react";
 import { FaBinoculars } from "react-icons/fa6";
 import "../css/about.css";
 

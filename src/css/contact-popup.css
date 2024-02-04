@@ -24,10 +24,11 @@
   border-radius: 5px;
   width: 80%;
   height: 80%;
-  font-family: 'Source Sans 3', sans-serif;;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
-.upper-bg, .lower-bg {
+.upper-bg,
+.lower-bg {
   background-color: var(--forestgreen);
   height: 50%;
   width: 100%;

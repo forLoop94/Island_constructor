@@ -1,6 +1,5 @@
 import './App.css'
 import { Home } from './components/Home'
-import { NavPanel } from './components/NavPanel'
 
 import {
   createBrowserRouter,

@@ -125,10 +125,11 @@
 
 @keyframes news-bg {
   0% {
-    transform: translateX(30%)
+    transform: translateX(30%);
   }
+
   100% {
-    transform: translateX(0%)
+    transform: translateX(0%);
   }
 }
 

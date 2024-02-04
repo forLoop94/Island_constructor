@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../css/Slideshow.css";
 import image1 from "../assets/auth-pages-bg.jpg";
 
