@@ -66,6 +66,14 @@
   padding: 2rem;
 }
 
+.text-align {
+  text-align: center;
+}
+
+.align-btn-left {
+  justify-content: center;
+}
+
 .about-ceo {
   height: 80vh;
   box-shadow: 0 5px 10px 0 rgb(200, 200, 200);
@@ -114,6 +122,14 @@
   .about-paragraph {
     text-align: right;
     font-size: 40px;
+  }
+
+  .align-btn-left {
+    justify-content: flex-start;
+  }
+
+  .text-align {
+    text-align: start;
   }
 
   .about-paragraph {

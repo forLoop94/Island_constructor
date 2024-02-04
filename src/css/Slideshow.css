@@ -28,11 +28,22 @@
   z-index: 3;
 }
 
+.label-container div {
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.label-container p {
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: italic;
+}
+
 .label {
   color: white;
   width: 70%;
-  height: 6rem;
-  font-size: 4rem;
+  height: auto;
+  font-size: 2rem;
   text-align: center;
   background-color: transparent;
   filter: blur(15px);
@@ -118,6 +129,10 @@
 
   .label-container {
     top: 10rem;
+  }
+
+  .label-container div {
+    font-size: 4rem;
   }
 
   .label {

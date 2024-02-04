@@ -27,7 +27,7 @@ export const NavPanel = () => {
           tabIndex={0}
           aria-label="Toggle Panel"
         >
-          <FaBars className="text-white menu-btn ms-2 mt-2" />
+          <FaBars className="menu-btn ms-2 mt-2" />
         </span>
       </div>
       <div

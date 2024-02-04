@@ -1,5 +1,5 @@
 .news-section {
-  height: 60vh;
+  height: 30vh;
   padding-bottom: 4rem;
 }
 
@@ -22,7 +22,7 @@
 
 .news-home-btn {
   position: absolute;
-  bottom: 50%;
+  bottom: 50%; font-size: 10px;
 }
 
 .news-header {
@@ -134,9 +134,10 @@
 }
 
 @media (min-width: 1000px) {
-  /* .news-section {
-    z-index: 2000;
-  } */
+  .news-section {
+    height: 70vh;
+    padding: 3rem 0;
+  }
 
   .news-list {
     padding: 7rem 4rem;
@@ -157,6 +158,11 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 20px;
+  }
+
+  .news-home-btn {
+    font-size: 14px;
+    bottom: 38%;
   }
 
   .sub-title {

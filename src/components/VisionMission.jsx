@@ -12,7 +12,7 @@ export const VisionMission = () => {
           Eum repellendus voluptatum recusandae sed, reprehenderit iusto,
           eligendi vitae quos libero ducimus quasi.
         </p>
-        <div className="about-btn-container mt-3 d-flex justify-content-end">
+        <div className="about-btn-container mt-3 d-flex">
             <button className="btn-dark-bg">
               Read more <FaBinoculars className="ms-3" />
             </button>
@@ -20,21 +20,20 @@ export const VisionMission = () => {
       </div>
       <div className="vision-mission-text">
         <div>
-          <h2 className="about-header text-start">Vision</h2>
-          <p className="about-paragraph  text-start">
+          <h2 className="about-header text-align">Vision</h2>
+          <p className="about-paragraph text-align">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
             cumque quo porro itaque modi hic praesentium, commodi rem
             necessitatibus aspernatur!
           </p>
         </div>
         <div>
-          <h2 className="about-header text-start">Mission</h2>
-          <p className="about-paragraph  text-start">
+          <h2 className="about-header text-align">Mission</h2>
+          <p className="about-paragraph text-align">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-            nulla quos esse natus officia odio dignissimos. Minima dolor
-            perspiciatis quibusdam.
+            nulla quos esse natus officia odio dignissimos.
           </p>
-          <div className="about-btn-container mt-3 d-flex justify-content-start">
+          <div className="mt-3 d-flex align-btn-left">
             <button className="btn-main">
               Read more <FaBinoculars className="ms-3" />
             </button>
