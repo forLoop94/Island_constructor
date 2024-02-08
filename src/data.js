@@ -48,3 +48,24 @@ export const newsData = [
     date: "January 24, 2024"
   }
 ]
+
+// project data
+
+export const projectsData = [
+  {
+    image: "https://images.pexels.com/photos/224924/pexels-photo-224924.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "details header": "Eko Bridge",
+    "details body": "Courtesy of Falodi Daniel, AWF Drone services, Victoria Island, Lagos",
+    date: "January 24, 2024",
+  },
+  {
+    image: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "details header": "Express Park Road",
+    "details body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vel dolores quis. Recusandae, necessitatibus. Alias consectetur esse dicta tenetur culpa laboriosam sint tempora quis architecto?",
+  },
+  {
+    image: "https://images.pexels.com/photos/224924/pexels-photo-224924.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "details header": "Lagos-Ibadan Express Way",
+    "details body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vel dolores quis. Recusandae, necessitatibus. Alias consectetur esse dicta tenetur culpa laboriosam sint tempora quis architecto?",
+  },
+];
