@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/Slideshow.css";
 import { projectsData } from "../data.js"
 
 const ProjectsSlide = () => {
   const [slideIndex, setSlideIndex] = useState(1);
   const slidesRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     showSlides(slideIndex);
@@ -54,6 +56,7 @@ const ProjectsSlide = () => {
               <h1 className="text-white">{data["details header"]}</h1>
               <p className="text-white">{data["details body"]}</p>
             </div>
+            <button className="btn btn-primary" onClick={() => navigate(`/projects/${index}`)}>details</button>
           </div>
         ))}
       </div>
