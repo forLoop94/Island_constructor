@@ -1,12 +1,17 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../data";
 import "../css/project.css";
 import { Footer } from "./Footer";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import {
+  BsChevronLeft,
+  BsChevronRight,
+  BsGrid3X3GapFill,
+} from "react-icons/bs";
 
 export const ProjectDetails = () => {
   const { projectId } = useParams();
+  const navigate = useNavigate();
   const [projectIdVal, setProjectIdVal] = useState(parseFloat(projectId));
   const projectDetail = projectsData[projectIdVal];
 
@@ -49,28 +54,29 @@ export const ProjectDetails = () => {
           />
         </div>
         <div className="primary-text pt-5">{projectDetail["details body"]}</div>
-        <div className="d-flex justify-content-between">
-          <div className="nav-containers">
-            {projectIdVal < 1 ? (
-              <h5 className="pro-nav-title">Go right</h5>
-            ) : (
-              <h5 className="pro-nav-title">{projectsData[projectIdVal - 1]["details header"]}</h5>
-            )}
+        <div className="mid-page d-flex justify-content-between">
+          <div className="nav-containers d-flex flex-column">
             <button
-              className="pro-nav-btns"
+              className="pro-nav-btns-left"
               style={noPrevious}
               onClick={() => previousProject(projectIdVal)}
             >
               <BsChevronLeft className="pb-1" />
               Previous
             </button>
-          </div>
-          <div className="nav-containers justify-self-end">
-            {projectIdVal === projectsData.length - 1 ? (
-              <h5 className="pro-nav-title">Go left</h5>
+            {projectIdVal < 1 ? (
+              <h5 className="pro-nav-title"></h5>
             ) : (
-              <h5 className="pro-nav-title">{projectsData[projectIdVal + 1]["details header"]}</h5>
+              <h5 className="pro-nav-title">
+                {projectsData[projectIdVal - 1]["details header"]}
+              </h5>
             )}
+          </div>
+          <div className="d-flex overview-container flex-column align-items-center justify-content-center" onClick={() => navigate("/projects-overview")}>
+            <BsGrid3X3GapFill className="overview-icon" />
+            <small className="sm-text">overview</small>
+          </div>
+          <div className="nav-containers d-flex flex-column">
             <button
               className="pro-nav-btns"
               style={noNext}
@@ -79,6 +85,13 @@ export const ProjectDetails = () => {
               Next
               <BsChevronRight />
             </button>
+            {projectIdVal === projectsData.length - 1 ? (
+              <h5 className="pro-nav-title text-end"></h5>
+            ) : (
+              <h5 className="pro-nav-title text-end">
+                {projectsData[projectIdVal + 1]["details header"]}
+              </h5>
+            )}
           </div>
         </div>
       </div>
