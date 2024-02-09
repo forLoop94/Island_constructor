@@ -57,7 +57,9 @@ export const NewsDetails = () => {
             </p>
           </div>
         </div>
-        <Link to="/news">Back to new releases</Link>
+        <div className="back-to-news d-flex justify-content-center">
+          <Link to="/news">Back to new releases</Link>
+        </div>
       </div>
       <Footer />
     </section>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaX } from "react-icons/fa6";
 import "../css/navpanel.css";
+import logo from "../assets/logo.png";
 
 export const NavPanel = () => {
   const location = useLocation();
@@ -38,9 +39,9 @@ export const NavPanel = () => {
         onKeyDown={() => setPanel(!panel)}
         tabIndex={0}
       >
-        <div className="logo-container">
-          {/* <img src={logo} alt="logo" className="logo" /> */}
-          <h1 className="text-white">Logo</h1>
+        <div className="logo-container d-flex flex-column align-items-center">
+          <img src={logo} alt="logo" className="logo" />
+          <small>Seyi & Co.</small>
         </div>
         <div className="nav-panel">
           <ul>

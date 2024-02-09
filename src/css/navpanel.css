@@ -150,6 +150,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 0;
+    margin-left: 40%;
   }
 
   .nav-panel a {
@@ -162,14 +163,25 @@
   }
 
   .logo-container {
-    width: 20%;
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 10%;
+  }
+
+  .logo-container small {
+    position: absolute;
+    top: 3.8rem;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
 
   .logo {
     color: white;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 
   .mobile-close,

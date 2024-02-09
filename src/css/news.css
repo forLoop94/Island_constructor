@@ -123,6 +123,11 @@
   font-size: 10px;
 }
 
+.back-to-news {
+  color: var(--forestgreen);
+  font-size: 1rem;
+}
+
 @keyframes news-bg {
   0% {
     transform: translateX(30%);
@@ -179,5 +184,9 @@
 
   .courtesy {
     font-size: 14px;
+  }
+
+  .back-to-news {
+    font-size: 1.5rem;
   }
 }
