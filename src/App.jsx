@@ -1,5 +1,5 @@
 import './App.css'
-import { Home } from './components/Home'
+import { Home } from './pages/Home'
 
 import {
   createBrowserRouter,
@@ -8,23 +8,23 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom';
 import Root from './components/Root';
-import { About } from './components/About';
 import Slideshow from './components/Slideshow';
-import { Projects } from './components/Projects';
-import { VisionMission } from './components/VisionMission';
+import { Projects } from './pages/Projects';
 import { Footer } from './components/Footer';
 import { ContactPopup } from './components/ContactPopup';
-import { News } from './components/News';
+import { News } from './pages/News';
 import { NewsDetails } from './components/NewsDetails';
 import { ProjectDetails } from './components/ProjectDetails';
 import ProjectsOverview from './components/ProjectsOverview';
+import AboutPage from './pages/AboutPage';
+import Objectives from './pages/Objectives';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<Root />}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/slide" element={<Slideshow />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/popup" element={<ContactPopup />} />
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
         <Route path="/projects/:projectId" element={<ProjectDetails />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:newsId" element={<NewsDetails />} />
-        <Route path="/vision-mission" element={<VisionMission />} />
+        <Route path="/vision-mission" element={<Objectives />} />
       </Route>
     </Route>,
   ),

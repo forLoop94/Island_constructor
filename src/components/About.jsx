@@ -1,6 +1,5 @@
 import "../css/about.css";
 import { FaBinoculars } from "react-icons/fa";
-import { Footer } from "./Footer"
 
 export const About = () => {
   return (
@@ -30,7 +29,6 @@ export const About = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { newsData } from "../data";
-import { Footer } from "./Footer";
+import { Footer } from "../components/Footer";
 import { BsChevronRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 

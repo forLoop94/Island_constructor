@@ -1,9 +1,9 @@
 import "../css/home.css";
-import { Footer } from "./Footer";
-import { About } from "./About";
-import { VisionMission } from "./VisionMission";
-import Slideshow from "./Slideshow";
-import { NewsBg } from "./News-bg";
+import { Footer } from "../components/Footer";
+import { About } from "../components/About";
+import { VisionMission } from "../components/VisionMission";
+import Slideshow from "../components/Slideshow";
+import { NewsBg } from "../components/News-bg";
 import { BsChevronRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
