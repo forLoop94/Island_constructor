@@ -66,19 +66,14 @@ export const NavPanel = () => {
             </li>
             <li>
               <Link style={setNavPanelBackground("/vision-mission")} to="/vision-mission">
-                Phylosophies
+                Philosophies
               </Link>
             </li>
-            <li>
-              <Link style={setNavPanelBackground("/footer")} to="/footer">
-                Footer
-              </Link>
-            </li>
-            <li>
+            {/* <li>
               <Link style={setNavPanelBackground("/popup")} to="/popup">
                 Contact Popup
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div
