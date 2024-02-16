@@ -1,9 +1,8 @@
-import React from "react";
 import { projectsData } from "../data";
 import { BsChevronRight } from "react-icons/bs";
 import "../css/project.css";
 import { Footer } from "./Footer";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ProjectsOverview = () => {
   const navigate = useNavigate();

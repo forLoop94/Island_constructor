@@ -20,8 +20,8 @@ export const Home = () => {
       <div className="about-container">
         <About className="home-about" />
       </div>
-      <div className="m-5">
-        <h1 className="news-header primary-text">Projects</h1>
+      <div className="mt-5 mb-5">
+        <h1 className="about-header text-center mb-5">Projects</h1>
         <ProjectsSlide />
       </div>
       <div className="news-home">

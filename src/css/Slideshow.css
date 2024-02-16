@@ -14,7 +14,8 @@
   width: 100%;
 }
 
-.slide img, .project-slide img {
+.slide img,
+.project-slide img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -24,20 +25,20 @@
 
 .project-slide img {
   animation: none;
-
 }
 
-.label-container, .project-text {
+.label-container,
+.project-text {
   position: absolute;
   top: 7rem;
   z-index: 3;
 }
 
 .project-text {
- top: 0;
- padding: 6rem 2rem;
- background-color: rgba(0, 0, 0, 0.6);
- z-index: -1;
+  top: 0;
+  padding: 6rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .label-container div {
@@ -63,7 +64,8 @@
   animation-timing-function: linear;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   width: auto;

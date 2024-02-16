@@ -24,7 +24,8 @@
   height: 40vh;
 }
 
-.pro-nav-btns, .pro-nav-btns-left {
+.pro-nav-btns,
+.pro-nav-btns-left {
   background-color: transparent;
   border: none;
   outline: none;
@@ -151,7 +152,8 @@
     font-size: 2rem;
   }
 
-  .pro-nav-btns, .pro-nav-btns-left {
+  .pro-nav-btns,
+  .pro-nav-btns-left {
     font-size: 1.5rem;
   }
 

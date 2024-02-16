@@ -114,7 +114,8 @@
   left: 0.5rem;
 }
 
-.logo, .logo-container small {
+.logo,
+.logo-container small {
   display: none;
 }
 

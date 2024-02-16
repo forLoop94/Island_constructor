@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import "../css/Slideshow.css";
-import image1 from "../assets/auth-pages-bg.jpg";
 
 const Slideshow = () => {
   const [slideIndex, setSlideIndex] = useState(1);
