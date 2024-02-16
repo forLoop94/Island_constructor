@@ -27,26 +27,24 @@
 
 # 📖 Budget App <a name="about"></a>
 
-The **Budget App**  is an application that helps the user keep track of financial activities across different categories.
+The **Seyi & Co**  is a website for a construction company. The pages have placeholder text and images for now.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- RUBY
-- Rails
-- Postgresql
-- HTML
+- React
 - CSS
-- Javascript
+- HTML
+- Bootstrap
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] **Login**
-- [ ] **Sign Up**
-- [ ] **Logout**
-- [ ] **Create New category**
-- [ ] **Create New transaction**
+- [ ] **Projects**
+- [ ] **News**
+- [ ] **Footer**
+- [ ] **About**
+- [ ] **Home**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,10 +56,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- git
-- Ruby
-- Rails
-- Bundle gem
+- A computer or mobile device
+- Node.js
 
 ### Setup
 
@@ -69,8 +65,8 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:forLoop94/Rails_budget_app.git
-  bundle install
+  git@github.com:forLoop94/Island_constructor.git
+  npm install
 ```
 
 ### Usage
@@ -78,7 +74,7 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 ```sh
-  rails s
+  npm run dev
 ```
 
 ### Run tests
@@ -86,24 +82,21 @@ To run the project, execute the following command:
 To run tests, run the following commands:
 
 ```sh
-  rubocop
-  rspec spec/
-  npm run stylelint
+ npx eslint "**/*.{js,jsx}"
+ npx stylelint "**/*.{css,scss}"
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Deployment <a name="Deployment"></a>
-Deployment: [Thrifty](https://thrifty-ma5c.onrender.com/)
+Deployment: [live demo](https://seyi-construction.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎞️ Presentation Video <a name="video"></a>
-Video: [Presentation](https://www.loom.com/share/36ae6cb1537b428596be98fbb1ab9c7b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Charles Andrews**
 
@@ -114,7 +107,8 @@ Video: [Presentation](https://www.loom.com/share/36ae6cb1537b428596be98fbb1ab9c7
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Stats dashboard**
+- **Board of Directors page**
+- **Careers page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +116,7 @@ Video: [Presentation](https://www.loom.com/share/36ae6cb1537b428596be98fbb1ab9c7
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/forLoop94/Rails_budget_app/issues).
+Feel free to check the [issues page](https://github.com/forLoop94/Island_constructor/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,8 +128,7 @@ If you like this project give me a follow and/or a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for giving me this wonderful opportunity to work on this project
-and [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the original design.
+I would like to thank Seyi & CO for the great opportunity to work on this project
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
