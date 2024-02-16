@@ -114,6 +114,17 @@
   background-color: white;
 }
 
+.pro-btn-wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 @media (min-width: 1000px) {
   .pro-details-container {
     padding: 7rem;

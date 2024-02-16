@@ -75,10 +75,18 @@
 
 .prev {
   left: 0;
+  background-color: var(--forestgreen);
+  color: white;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .next {
   right: 0;
+  background-color: var(--forestgreen);
+  color: white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .slide-indicator {
