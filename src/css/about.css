@@ -1,0 +1,154 @@
+:root {
+  --apple-green: greenyellow;
+  --forestgreen: rgb(76, 127, 1);
+  --dark-text: rgba(0, 0, 0, 0.7);
+}
+
+.about {
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-header {
+  font-family: montserrat, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 7px;
+  color: var(--apple-green);
+}
+
+.about-paragraph {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.about-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main,
+.btn-dark-bg {
+  border: 2px solid var(--apple-green);
+  color: var(--apple-green);
+  padding: 0.8rem 1.3rem;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.btn-dark-bg {
+  border: 2px solid white;
+  color: white;
+  background-color: var(--forestgreen);
+}
+
+.btn-dark-bg:hover {
+  color: var(--dark-text);
+  background-color: white;
+  border: 2px solid var(--forestgreen);
+}
+
+.btn-main:hover {
+  color: white;
+  background-color: var(--apple-green);
+}
+
+.image-container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.align-btn-left {
+  justify-content: center;
+}
+
+.about-ceo {
+  height: 80vh;
+  box-shadow: 0 5px 10px 0 rgb(200, 200, 200);
+}
+
+.objectives-header {
+  color: white;
+}
+
+.objectives-text {
+  padding: 1.5rem;
+  background-color: var(--forestgreen);
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  .about {
+    padding: 4rem 3rem 3rem 3rem;
+    flex-direction: row;
+  }
+
+  .vision-mission {
+    padding: 7rem;
+    height: 100%;
+  }
+
+  .about-text,
+  .objectives-text {
+    width: 50%;
+    align-self: center;
+  }
+
+  .objectives-text {
+    align-self: start;
+    background-color: var(--forestgreen);
+    color: white;
+    height: 70%;
+    box-shadow: 0 5px 10px 0 rgb(200, 200, 200);
+  }
+
+  .vision-mission-text {
+    width: 50%;
+  }
+
+  .about-header,
+  .about-paragraph {
+    text-align: right;
+    font-size: 40px;
+  }
+
+  .align-btn-left {
+    justify-content: flex-start;
+  }
+
+  .text-align {
+    text-align: start;
+  }
+
+  .about-paragraph {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    word-spacing: 2px;
+  }
+
+  .about-btn-container {
+    justify-content: end;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+
+  .about-ceo {
+    width: 80%;
+    height: 80vh;
+    object-fit: cover;
+  }
+}

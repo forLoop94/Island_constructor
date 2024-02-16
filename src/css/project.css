@@ -1,0 +1,181 @@
+:root {
+  --apple-green: greenyellow;
+  --forestgreen: rgb(76, 127, 1);
+  --forestbg: rgb(76, 127, 1, 0.8);
+  --forestbg-light: rgba(153, 255, 0, 0.1);
+  --dark-text: rgba(0, 0, 0, 0.7);
+}
+
+.pro-details-container {
+  padding: 4rem 2rem;
+}
+
+.pro-details-title {
+  font-size: 2rem;
+  font-family: montserrat, sans-serif;
+}
+
+.project-details-headline {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details-headline > img {
+  height: 40vh;
+}
+
+.pro-nav-btns,
+.pro-nav-btns-left {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--forestgreen);
+  text-align: end;
+}
+
+.pro-nav-btns-left {
+  text-align: start;
+}
+
+.pro-nav-title {
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.7rem;
+}
+
+.mid-page {
+  padding-top: 4rem;
+}
+
+.overview-container {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
+.overview-container:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.overview-icon {
+  color: var(--forestgreen);
+  font-size: 1.5rem;
+}
+
+.overview-icon:hover {
+  background-color: var(--forestgreen);
+  color: white;
+}
+
+.nav-containers {
+  width: 45%;
+}
+
+.sm-text {
+  font-size: 40%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 15px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.overview-text {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--forestbg);
+  color: white;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overview-text {
+  opacity: 1;
+}
+
+.overview-text h5 {
+  width: 70%;
+  font-family: montserrat, sans-serif;
+}
+
+.detail-btns {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--apple-green);
+  color: var(--forestgreen);
+  height: 2.5rem;
+  width: 2.5rem;
+  font-weight: 900;
+}
+
+.detail-btns:hover {
+  background-color: white;
+}
+
+.pro-btn-wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  .pro-details-container {
+    padding: 7rem;
+  }
+
+  .pro-details-title {
+    font-size: 6rem;
+  }
+
+  .project-details-headline {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-containers {
+    width: 25%;
+  }
+
+  .pro-nav-title {
+    font-size: 2rem;
+  }
+
+  .pro-nav-btns,
+  .pro-nav-btns-left {
+    font-size: 1.5rem;
+  }
+
+  .overview-icon {
+    font-size: 2rem;
+  }
+
+  .sm-text {
+    font-size: 60%;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-container > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .project-details-headline > img {
+    height: 60vh;
+    width: 50vw;
+  }
+}
