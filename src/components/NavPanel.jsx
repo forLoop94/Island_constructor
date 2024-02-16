@@ -70,11 +70,6 @@ export const NavPanel = () => {
                 Objectives
               </Link>
             </li>
-            {/* <li>
-              <Link style={setNavPanelBackground("/popup")} to="/popup">
-                Contact Popup
-              </Link>
-            </li> */}
           </ul>
         </div>
         <div

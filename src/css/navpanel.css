@@ -114,7 +114,7 @@
   left: 0.5rem;
 }
 
-.logo-container {
+.logo, .logo-container small {
   display: none;
 }
 
@@ -130,8 +130,6 @@
     flex-direction: row;
     height: 15vh;
     padding: 1rem 2rem;
-
-    /* box-shadow: 0 0 10px 0 rgb(200, 200, 200); */
     background-color: white;
     z-index: 1001;
   }
@@ -182,6 +180,7 @@
     color: white;
     width: 80px;
     height: 80px;
+    display: flex;
   }
 
   .mobile-close,
