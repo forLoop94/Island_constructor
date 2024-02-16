@@ -48,7 +48,7 @@ const Slideshow = () => {
     <div className="slideshow-container">
       <div className="slides" ref={slidesRef}>
         <div className="slide">
-          <img src={image1} alt="Image 1" />
+          <img src="https://images.pexels.com/photos/53176/architecture-iron-steel-building-53176.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1" />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
             <div className="label">Seyi_Daniels & Co.</div>
             <p className="label">Changing lives...</p>
@@ -56,7 +56,7 @@ const Slideshow = () => {
         </div>
         <div className="slide">
           <img
-            src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/53212/one-world-trade-center-manhattan-owtc-new-york-53212.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Image 2"
           />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
@@ -66,7 +66,7 @@ const Slideshow = () => {
         </div>
         <div className="slide">
           <img
-            src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/2689253/pexels-photo-2689253.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Image 3"
           />
           <div className="label-container d-flex align-items-center w-100 h-100 flex-column">
@@ -75,12 +75,6 @@ const Slideshow = () => {
           </div>
         </div>
       </div>
-      {/* <a className="prev" onClick={() => plusSlides(-1)}>
-        &#10094;
-      </a>
-      <a className="next" onClick={() => plusSlides(1)}>
-        &#10095;
-      </a> */}
       <div className="slide-indicator">
         {Array.from({ length: 3 }).map((_, index) => (
           <span

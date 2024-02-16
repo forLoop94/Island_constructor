@@ -20,6 +20,10 @@
   flex-direction: column;
 }
 
+.project-details-headline > img {
+  height: 40vh;
+}
+
 .pro-nav-btns, .pro-nav-btns-left {
   background-color: transparent;
   border: none;
@@ -166,5 +170,10 @@
   .grid-container > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+  }
+
+  .project-details-headline > img {
+    height: 60vh;
+    width: 50vw;
   }
 }

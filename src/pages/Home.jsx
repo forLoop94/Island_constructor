@@ -6,6 +6,7 @@ import Slideshow from "../components/Slideshow";
 import { NewsBg } from "../components/News-bg";
 import { BsChevronRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import ProjectsSlide from "../components/ProjectsSlide";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -19,10 +20,17 @@ export const Home = () => {
       <div className="about-container">
         <About className="home-about" />
       </div>
+      <div className="m-5">
+        <h1 className="news-header primary-text">Projects</h1>
+        <ProjectsSlide />
+      </div>
       <div className="news-home">
         <NewsBg />
         <div className="d-flex justify-content-center">
-          <button className="btn-dark-bg news-home-btn" onClick={() => navigate('/news')}>
+          <button
+            className="btn-dark-bg news-home-btn"
+            onClick={() => navigate("/news")}
+          >
             Keep up with the latest events <BsChevronRight />
           </button>
         </div>
