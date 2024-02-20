@@ -130,6 +130,11 @@
   height: 100vh;
 }
 
+.overview-image {
+  width: 100%;
+  height: 15rem;
+}
+
 @media (min-width: 1000px) {
   .pro-details-container {
     padding: 7rem;
@@ -172,10 +177,19 @@
   .grid-container > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    height: 31rem;
+  }
+
+  .grid-item {
+    height: 15rem;
   }
 
   .project-details-headline > img {
     height: 60vh;
     width: 50vw;
+  }
+
+  .overview-image {
+    height: 100%;
   }
 }
