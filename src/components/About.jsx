@@ -14,6 +14,7 @@ export const About = () => {
             Corrupti inventore ipsam repellat? Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Perferendis, quod! Sequi enim nihil,
             culpa molestias obcaecati iste tempore
+            Change this to something nicer!
           </p>
           <div className="about-btn-container mt-5">
             <button className="btn-main">
